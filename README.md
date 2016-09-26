@@ -25,19 +25,19 @@ If you have Ubuntu based system, you can type this command in your console:
 
 To compile the game, enter into the project folder, and from you console type:
 ```bash
-g++ main.cpp -o main.out -lGL -lGLU -lglut -lalut -lopenal
+    g++ main.cpp -o main.out -lGL -lGLU -lglut -lalut -lopenal
 
 ```
 
 ### How To Run
 To run the game you only type:
 ```bash
-./main.out
+    ./main.out
 ```
 
 **If you want have the debug message type:**
 ```bash
-./main.out debug
+    ./main.out debug
 ```
 
 ### How to play
@@ -50,4 +50,14 @@ To play the game you there are some simple commmand:
 + **D**: Turn right
 + **ESC**: Exit the game
 + **SPACEBAR**: Disable the alarm
+
+### Modify and Extend the game
+
+To modify the *map* and/or the *alarms* you can modify this files:
++ *configuration.txt*
++ *alarms.txt*
+
+To modify the scenario you can change and modify the audio and the texture that are into *assets* folder
+
+**The Texture loader can support different kind of texture, anyway you have to pay attention on the RBG texture format**
 
