@@ -36,7 +36,7 @@ public:
 
 
 
-        Logger::info(string("Ci sono ")+maze::to_string(alarms)+string(" allarmi da inserire, vettore istanziato con dimensione ")+maze::to_string(allAlarms.size()));
+        Logger::info(string("There are ")+maze::to_string(alarms)+string(" alarms to insert, vector istantiate with size of")+maze::to_string(allAlarms.size()));
 
         for(int i=0; i<alarms; i++){
 

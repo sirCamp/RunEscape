@@ -1,24 +1,53 @@
-Progetto di Sistemi Multimediali
-===============================================================
+Run Escape: a simple maze game developed in C++ with OpenGL and Open AL
+=======================================================================
 
-Questo progetto in C++ e OpenGL è un nato come progetto universitario.
-Si tratta di un gioco basato su un labirinto, in cui lo scopo è quello di disattivare gli allarmi in tempo, altrimenti si perde.
+This project, in C ++ and OpenGL, is a born as a university project: is developed for Multimedial Sistems course of MSc of Computer Science at University of Padova.
+It is a game based on a maze, in which the aim is to set off alarms in the maze, within a configurable time limit.
+
+The *map* and the *alarms* are completely configurable by txt file, so you can have a new game each time!!
 
 
-### Prerequisiti
+### Prerequisites
 
-Per poter Eseguire il progetto è necessario avere la suite di OpenGL e OpenAL instalata.
-### How To
+I suppose that you're using a Debian based distros and that you already have a C++ compiler installed. You can also run it on Windows OS.
+To compile and run this game you have to install some different packages as:
+- freeglut3​
+- freeglut3­dev
+- libghc­alut­dev ​
+- libalut­dev
 
-Per compilare il progetto, entrare nella cartella e digitare:
+If you have Ubuntu based system, you can type this command in your console:
+```bash
+    sudo apt-get install freeglut3​ freeglut3­dev libghc­alut­dev ​libalut­dev
+```
+ 
+### How To Compile
+
+To compile the game, enter into the project folder, and from you console type:
 ```bash
 g++ main.cpp -o main.out -lGL -lGLU -lglut -lalut -lopenal
 
 ```
 
-Per eseguire, è sufficiente digitare:
+### How To Run
+To run the game you only type:
 ```bash
 ./main.out
 ```
 
-Aggiungendo il paramtro **debug** al comando di esecuzione, si attiverà la scrittura dei log su console
+**If you want have the debug message type:**
+```bash
+./main.out debug
+```
+
+### How to play
+
+To play the game you there are some simple commmand:
+
++ **W**: Go foward
++ **S**: Go backward
++ **A**: Turn left
++ **D**: Turn right
++ **ESC**: Exit the game
++ **SPACEBAR**: Disable the alarm
+

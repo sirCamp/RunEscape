@@ -120,27 +120,27 @@ class MovementManager{
 
 
                             if (x - 1 == X && z == Z) {
-                                Logger::info(string("ALLARME TROVATO DIFRONTE in: ") + maze::to_string(x) + string(" ") +
+                                Logger::info(string("Found alarm in front of at: ") + maze::to_string(x) + string(" ") +
                                              maze::to_string(z));
                                 active = false;
 
                             }
 
                             if (x == X && z - 1 == Z) {
-                                Logger::info(string("ALLARME TROVATO DESTRA in: ") + maze::to_string(x) + string(" ") +
+                                Logger::info(string("Found alarm at right at: ") + maze::to_string(x) + string(" ") +
                                              maze::to_string(z));
                                 active = false;
                             }
 
                             if (x + 1 == X && z == Z) {
-                                Logger::info(string("ALLARME TROVATO DIETRO in: ") + maze::to_string(x) + string(" ") +
+                                Logger::info(string("Found alarm behind at: ") + maze::to_string(x) + string(" ") +
                                              maze::to_string(z));
                                 active = false;
                             }
 
 
                             if (x == X && z + 1 == Z) {
-                                Logger::info(string("ALLARME TROVATO SINISTRA in: ") + maze::to_string(x) + string(" ") +
+                                Logger::info(string("Found alarm left at: ") + maze::to_string(x) + string(" ") +
                                              maze::to_string(z));
                                 active = false;
                             }
@@ -150,7 +150,7 @@ class MovementManager{
 
                                 (*ite)->setActive(active);
                                 maze->decreaseActiveAlarms();
-                                Logger::info(string("disabilito index: ")+maze::to_string(index));
+                                Logger::info(string("disable alarm number: ")+maze::to_string(index));
                                 audioManager->stopAudioSource(index);
 
                             }
@@ -163,7 +163,7 @@ class MovementManager{
 
                     case Constants::ESC_KEY:
                         delete audioManager;
-                        Logger::info("Exiting from MazeGame\nbye!!");
+                        Logger::info("Exiting from RunEscape\nbye!!");
                         exit(0);
                         break;
                     }
@@ -175,7 +175,7 @@ class MovementManager{
 
                     if(button == Constants::ESC_KEY) {
                         delete audioManager;
-                        Logger::info("Exiting from MazeGame\nbye!!");
+                        Logger::info("Exiting from RunEscape\nbye!!");
                         exit(0);
                     }
                 }

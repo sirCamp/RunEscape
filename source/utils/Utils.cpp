@@ -64,7 +64,7 @@ public:
 
         if(collision){
             Logger::info("CRASH");
-            Logger::info(string("Axeses: z:")+maze::to_string(to_z)+string(" x: ")+maze::to_string(to_x));
+            Logger::info(string("Axes: z:")+maze::to_string(to_z)+string(" x: ")+maze::to_string(to_x));
 
         }
 

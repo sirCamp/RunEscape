@@ -68,7 +68,7 @@ public:
 
 
 
-        Logger::info(string("Audio in")+maze::to_string(x)+string(" ")+maze::to_string(z)+string(" ")+maze::to_string(y));
+        Logger::info(string("Audio source in")+maze::to_string(x)+string(" ")+maze::to_string(z)+string(" ")+maze::to_string(y));
         ALuint* auxBuffer = new ALuint(alutCreateBufferFromFile(Constants::AUDIO_ALARM));
         buffers->push_back(auxBuffer);
         int i = sources->size();
